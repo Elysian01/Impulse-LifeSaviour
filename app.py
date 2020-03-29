@@ -153,7 +153,7 @@ def BreastCancer():
     #             flash("Please Upload Only Valid Files ")
     #         except PDFPageCountError:
     #             flash("Please Upload Only Valid Files , or try again later")
-    return render_template("PageNotFound.html")
+    return render_template("breastcacernotfound.html")
 
 
 @app.route("/HeartDisease", methods=["POST", "GET"])
