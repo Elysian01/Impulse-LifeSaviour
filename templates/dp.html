@@ -14,6 +14,15 @@
             height: 1.55rem;
         }
         
+        .f2{
+            display: none;
+        }
+        .f3{
+            display: none;
+        }
+        .f4{
+            display: none;
+        }
         .checkbox-lg .custom-control-label {
             padding-top: 13px;
             padding-left: 6px;
@@ -44,7 +53,9 @@
         .custom-control-input {
             margin-left: -15px;
         }
+
     </style>
+    
 </head>
 
 <body>
@@ -99,146 +110,147 @@
     <form action="{{ url_for('Disease') }}" method="POST">
 
         <div class="container ">
-            <div class="row ">
-                <div class="col-6 col-xl-3">
-                    <div class="custom-control custom-checkbox checkbox-lg">
+            <div id="first"class="f1">
+                <div class="row ">
+                    <div class="col-6 col-xl-3">
+                        <div class="custom-control custom-checkbox checkbox-lg">
 
-                        <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked15" name="fever" value="fever">
-                        <label class="custom-control-label easy  " for="defaultUnchecked15"><span
-                                class="label label-primary"><b>Fever</b></span></label>
+                            <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked15" name="fever" value="fever">
+                            <label class="custom-control-label easy  " for="defaultUnchecked15"><span
+                                    class="label label-primary"><b>Fever</b></span></label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3">
+                        <div class="custom-control custom-checkbox checkbox-lg">
+
+                            <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked25" name="cough" value="cough">
+                            <label class="custom-control-label easy  " for="defaultUnchecked25"><span
+                                    class="label label-primary"><b>Cough</b></span></label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3">
+                        <div class="custom-control custom-checkbox checkbox-lg">
+
+                            <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked35" name="vomiting" value="vomiting">
+                            <label class="custom-control-label easy  " for="defaultUnchecked35"><span
+                                    class="label label-primary"><b>Vomiting</b></span></label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3">
+                        <div class="custom-control custom-checkbox checkbox-lg">
+
+                            <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked45" name="cold" value="cold">
+                            <label class="custom-control-label easy  " for="defaultUnchecked45"><span
+                                    class="label label-primary"><b>Cold</b></span></label>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-xl-3">
-                    <div class="custom-control custom-checkbox checkbox-lg">
+                <div class="row">
+                    <div class="col-6 col-xl-3">
+                        <div class="custom-control custom-checkbox checkbox-lg">
 
-                        <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked25" name="cough" value="cough">
-                        <label class="custom-control-label easy  " for="defaultUnchecked25"><span
-                                class="label label-primary"><b>Cough</b></span></label>
+                            <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked55" name="stomach_pain" value="stomach_pain">
+                            <label class="custom-control-label easy  " for="defaultUnchecked55"><span
+                                    class="label label-primary"><b>Stomach Pain</b></span></label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3">
+                        <div class="custom-control custom-checkbox checkbox-lg">
+
+                            <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked65" name="vision_problem" value="vision_problem">
+                            <label class="custom-control-label easy  " for="defaultUnchecked65"><span
+                                    class="label label-primary"><b>Vision problem</b></span></label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3">
+                        <div class="custom-control custom-checkbox checkbox-lg">
+
+                            <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked75" name="confusion" value="confusion">
+                            <label class="custom-control-label easy  " for="defaultUnchecked75"><span
+                                    class="label label-primary"><b>Confusion</b></span></label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3">
+                        <div class="custom-control custom-checkbox checkbox-lg">
+
+                            <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked85" name="arm_pain" value="arm_pain">
+                            <label class="custom-control-label easy  " for="defaultUnchecked85"><span
+                                    class="label label-primary"><b>Arm pain</b></span></label>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-xl-3">
-                    <div class="custom-control custom-checkbox checkbox-lg">
+                <div class="row">
+                    <div class="col-6 col-xl-3">
+                        <div class="custom-control custom-checkbox checkbox-lg">
 
-                        <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked35" name="vomiting" value="vomiting">
-                        <label class="custom-control-label easy  " for="defaultUnchecked35"><span
-                                class="label label-primary"><b>Vomiting</b></span></label>
+                            <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked95" name="itching" value="itching">
+                            <label class="custom-control-label easy  " for="defaultUnchecked95"><span
+                                    class="label label-primary"><b>Itching</b></span></label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3">
+                        <div class="custom-control custom-checkbox checkbox-lg">
+
+                            <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked105" name="muscle_pain" value="muscle_pain">
+                            <label class="custom-control-label easy  " for="defaultUnchecked105"><span
+                                    class="label label-primary"><b>Muscle Pain</b></span></label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3">
+                        <div class="custom-control custom-checkbox checkbox-lg">
+
+                            <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked115" name="depression" value="depression">
+                            <label class="custom-control-label easy  " for="defaultUnchecked115"><span
+                                    class="label label-primary"><b>Depression</b></span></label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3">
+                        <div class="custom-control custom-checkbox checkbox-lg">
+
+                            <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked125" name="headache" value="headache">
+                            <label class="custom-control-label easy  " for="defaultUnchecked125"><span
+                                    class="label label-primary"><b>Headache</b></span></label>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-xl-3">
-                    <div class="custom-control custom-checkbox checkbox-lg">
+                <div class="row">
+                    <div class="col-6 col-xl-6">
+                        <div class="custom-control custom-checkbox checkbox-lg">
 
-                        <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked45" name="cold" value="cold">
-                        <label class="custom-control-label easy  " for="defaultUnchecked45"><span
-                                class="label label-primary"><b>Cold</b></span></label>
+                            <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked135" name="sweating" value="sweating">
+                            <label class="custom-control-label easy  " for="defaultUnchecked135"><span
+                                    class="label label-primary"><b>Sweating </b></span></label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-6">
+                        <div class="custom-control custom-checkbox checkbox-lg">
+
+                            <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked145" name="shoulder_pain" value="shoulder_pain">
+                            <label class="custom-control-label easy  " for="defaultUnchecked145"><span
+                                    class="label label-primary"><b>Shoulder pain</b></span></label>
+                        </div>
                     </div>
                 </div>
+                <br>
+                <!-- <div class="text-center">
+                <div class="custom-control custom-checkbox checkbox-lg">
+
+                    <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked">
+                    <label class="custom-control-label easy  " for="defaultUnchecked"><span class="label label-primary"><b>None of these</b></span></label>
+                </div>
+            </div> -->
+                <br>
+                <div class="text-center">
+                    <a href="#second"><button id="nextBtn1" type="button" class="btn btn-primary btn-lg">Next</button></a>
+                </div>
+
             </div>
-            <div class="row">
-                <div class="col-6 col-xl-3">
-                    <div class="custom-control custom-checkbox checkbox-lg">
 
-                        <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked55" name="stomach_pain" value="stomach_pain">
-                        <label class="custom-control-label easy  " for="defaultUnchecked55"><span
-                                class="label label-primary"><b>Stomach Pain</b></span></label>
-                    </div>
-                </div>
-                <div class="col-6 col-xl-3">
-                    <div class="custom-control custom-checkbox checkbox-lg">
 
-                        <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked65" name="vision_problem" value="vision_problem">
-                        <label class="custom-control-label easy  " for="defaultUnchecked65"><span
-                                class="label label-primary"><b>Vision problem</b></span></label>
-                    </div>
-                </div>
-                <div class="col-6 col-xl-3">
-                    <div class="custom-control custom-checkbox checkbox-lg">
 
-                        <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked75" name="confusion" value="confusion">
-                        <label class="custom-control-label easy  " for="defaultUnchecked75"><span
-                                class="label label-primary"><b>Confusion</b></span></label>
-                    </div>
-                </div>
-                <div class="col-6 col-xl-3">
-                    <div class="custom-control custom-checkbox checkbox-lg">
-
-                        <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked85" name="arm_pain" value="arm_pain">
-                        <label class="custom-control-label easy  " for="defaultUnchecked85"><span
-                                class="label label-primary"><b>Arm pain</b></span></label>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6 col-xl-3">
-                    <div class="custom-control custom-checkbox checkbox-lg">
-
-                        <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked95" name="itching" value="itching">
-                        <label class="custom-control-label easy  " for="defaultUnchecked95"><span
-                                class="label label-primary"><b>Itching</b></span></label>
-                    </div>
-                </div>
-                <div class="col-6 col-xl-3">
-                    <div class="custom-control custom-checkbox checkbox-lg">
-
-                        <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked105" name="muscle_pain" value="muscle_pain">
-                        <label class="custom-control-label easy  " for="defaultUnchecked105"><span
-                                class="label label-primary"><b>Muscle Pain</b></span></label>
-                    </div>
-                </div>
-                <div class="col-6 col-xl-3">
-                    <div class="custom-control custom-checkbox checkbox-lg">
-
-                        <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked115" name="depression" value="depression">
-                        <label class="custom-control-label easy  " for="defaultUnchecked115"><span
-                                class="label label-primary"><b>Depression</b></span></label>
-                    </div>
-                </div>
-                <div class="col-6 col-xl-3">
-                    <div class="custom-control custom-checkbox checkbox-lg">
-
-                        <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked125" name="headache" value="headache">
-                        <label class="custom-control-label easy  " for="defaultUnchecked125"><span
-                                class="label label-primary"><b>Headache</b></span></label>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6 col-xl-6">
-                    <div class="custom-control custom-checkbox checkbox-lg">
-
-                        <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked135" name="sweating" value="sweating">
-                        <label class="custom-control-label easy  " for="defaultUnchecked135"><span
-                                class="label label-primary"><b>Sweating </b></span></label>
-                    </div>
-                </div>
-                <div class="col-6 col-xl-6">
-                    <div class="custom-control custom-checkbox checkbox-lg">
-
-                        <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked145" name="shoulder_pain" value="shoulder_pain">
-                        <label class="custom-control-label easy  " for="defaultUnchecked145"><span
-                                class="label label-primary"><b>Shoulder pain</b></span></label>
-                    </div>
-                </div>
-            </div>
             <br>
-            <!-- <div class="text-center">
-            <div class="custom-control custom-checkbox checkbox-lg">
-
-                <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked">
-                <label class="custom-control-label easy  " for="defaultUnchecked"><span class="label label-primary"><b>None of these</b></span></label>
-            </div>
-        </div> -->
-            <br>
-            <div class="text-center">
-                <a href="#section2"><button id="nextBtn1" type="button" class="btn btn-primary btn-lg">Next</button></a>
-            </div>
-
-
-
-
-
-            <br>
+            <div id="second" class="f2">
             <hr><br>
-
             <div class="row block2" id="section2">
                 <br><br>
                 <div class="col-6 col-xl-3">
@@ -369,17 +381,13 @@
     </div> -->
             <br><br>
             <div class="text-center" id="nb2">
-                <a href="#nb3"><button id="nextbtn2" class="btn btn-primary btn-lg" type="button">Next</button></a>
+                <a href="#third"><button id="nextbtn2" class="btn btn-primary btn-lg" type="button">Next</button></a>
             </div>
+        </div>
 
-            <br>
-            <hr><br>
-
-
-
-
-
-
+        <br>
+        <div id="third" class="f3">
+        <hr><br>
             <div class="row   block3">
                 <div class="col-6 col-xl-3">
                     <div class="custom-control custom-checkbox checkbox-lg">
@@ -519,19 +527,15 @@
             <!-- <br> -->
             <br><br><br>
             <div class="text-center" id="nb3">
-                <a href="#nb4"><button id="nextBtn3" type="button" class="btn btn-primary btn-lg">Next</button></a>
+                <a href="fourth"><button id="nextBtn3" type="button" class="btn btn-primary btn-lg">Next</button></a>
             </div>
-
+        </div>    
 
 
 
             <br>
-            <hr><br>
-
-
-
-
-
+        <div id="fourth" class="f4">
+        <hr><br>
             <div class="row block4 ">
                 <div class="col-6 col-xl-3">
                     <div class="custom-control custom-checkbox checkbox-lg">
@@ -670,6 +674,7 @@
                 <a href="#t2"><button id="submit" type="submit" class="btn btn-primary btn-lg">Submit</button></a>
             </div>
         </div>
+    </div>
         <br>
         <br>
 
@@ -677,6 +682,17 @@
         </div>
 
     </form>
+    <script type="text/javascript">
+        document.getElementById("first").addEventListener("click",function(){
+            document.querySelector(".f2").style.display = "inline";
+        });
+        document.getElementById("second").addEventListener("click",function(){
+            document.querySelector(".f3").style.display = "inline";
+        });
+        document.getElementById("third").addEventListener("click",function(){
+            document.querySelector(".f4").style.display = "inline";
+        });
+    </script>
 </body>
 
 </html>
