@@ -29,7 +29,7 @@ def predicts(inputs):
             if symptom == header[element]:
                 model_inputs5[element] = 1
 
-    with open("Models\DiseasePrediction(Dec)", "rb") as f:
+    with open("DiseasePrediction(Dec)", "rb") as f:
         Model_Decision_Tree = pickle.load(f)
 
     pred = Model_Decision_Tree.predict([model_inputs5])

@@ -53,9 +53,10 @@ def CurrentStatus():
             # print(request.form)
             formDict = request.form
             state = formDict['state']
+            # print(state)
             scases, scured, sdeath = CurrentStats.StateStatus(state)
     except UnboundLocalError:
-        flash("The State is not Effected Yet")
+        flash("The State is not Affected Yet")
     return render_template("CurrentStats.html", state=state, scases=scases, scured=scured, sdeath=sdeath, cases=cases, cured=cured, death=death, title="Current Statistics", navTitle="Current Status", headText="Caronavirus Current Stats Statewise", ImagePath="/static/Virus.png")
 
 
@@ -187,16 +188,20 @@ def Disease():
     symptoms = []
     if request.method == "POST":
         rf = request.form
-        print(rf)
+        # print(rf)
         for key, value in rf.items():
-            print(key)
+            # print(key)
             symptoms.append(value)
         print(symptoms)
-        prediction = DiseasePred.predicts(symptoms)
-        if prediction:
-            return render_template("Infected.htm", disease=prediction)
+
+        if len(symptoms) < 5 or len(symptoms) > 8:
+            flash("Please Select symptoms only between 5 and 8 Inclusive")
         else:
-            return render_template("NonInfected.htm")
+            prediction = DiseasePred.predicts(symptoms)
+            if prediction:
+                return render_template("Infected.htm", disease=prediction)
+            else:
+                return render_template("NonInfected.htm")
     return render_template("dp.html")
 
 
@@ -261,4 +266,4 @@ def Coronavirus():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(threaded=True, debug=True)
