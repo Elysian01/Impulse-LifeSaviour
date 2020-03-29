@@ -53,37 +53,43 @@
         .custom-control-input {
             margin-left: -15px;
         }
-
+    
     </style>
     
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Disease Prediction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div id="navigation">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Disease Prediction</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('Homepage') }}">Home <span
+                            class=" sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('About') }}">About Application</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('Contact') }}">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br> 
+    <div class="row">
+            <div class="col-4">
+                <img src="../static/Science.png" class="img-fluid float-right mx-0" alt="Responsive image" style="width: 150px; height:100px;">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{ url_for('Homepage') }}">Home <span
-                                class=" sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('About') }}">About Application</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('Contact') }}">Contact Us</a>
-                    </li>
-                </ul>
             </div>
-        </nav>
-    </div>
-    <br> <img src="/static/Science.png" class="mx-auto d-block" alt="Responsive image" style="width: 150px; height:100px;">
+            <div class="col float-left">
+                <h1 class="text-left mt-3 mx-0 font-weight-bolder">Medical Condition Prediction</h1>
+            </div>
+        </div>
 
     <br>
     <h1 class="text-center font-weight-bolder">Medical Condition Prediction</h1>
