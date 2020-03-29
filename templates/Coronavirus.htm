@@ -1,12 +1,17 @@
 {% extends "layout.html" %} {% block contents %}
 <style>
-    /* @media only screen and (min-device-width:320px) and (max-device-width:480px) {
-        .ele {
-            width: 50%;
-            margin-left: 10%;
-            margin-right: 0%;
-            background-color: aqua;
-        } */
+    .mobileContent {
+        display: none;
+    }
+    
+    @media only screen and (min-device-width:320px) and (max-device-width:480px) {
+        .mobileContent {
+            display: inline;
+        }
+        .table-responsive {
+            display: none;
+        }
+    }
 </style>
 <br>
 <form class="container" action="/CoronavirusPrediction" method="POST">
@@ -19,6 +24,7 @@
         <label for="exampleFormControlInput1" class="font-weight-bold">Age : </label>
         <input type="number" name="age" class="form-control" id="exampleFormControlInput1" placeholder="" required>
     </div>
+
 
     <div class="row">
         <div class="col-12 ele col-xl-4 col-lg-4 col-md-6 col-sm-6">
