@@ -78,7 +78,7 @@ plyer==1.4.2
 prompt-toolkit==3.0.4
 protobuf==3.11.3
 psutil==5.7.0
-PyAudio==0.2.11
+
 pycodestyle==2.5.0
 pycparser==2.19
 Pygments==2.6.1
