@@ -34,6 +34,7 @@ def currentStatus():
 
 
 def StateStatus(state):
+    everything = []
     myHtmlData = getData("https://www.mohfw.gov.in/")
 
 #     print(myHtmlData)
@@ -47,13 +48,25 @@ def StateStatus(state):
 
     myDataStr = myDataStr[1:]
     itemList = myDataStr.split("\n\n")
-    for item in itemList[0:23]:
+    # print(itemList)
+    count = 0
+    for item in itemList[0:54]:
+
         dataList = item.split("\n")
+
+        if count == 1:
+            # print(dataList[0], dataList[1])
+            everything.append(dataList[0])
+            everything.append(dataList[1])
+            count = 0
+
         if dataList[1] == state:
-            Cases = int(dataList[2]) + int(dataList[3])
-            everything = [Cases, dataList[4], dataList[5]]
-            # print(everything)
-            # time.sleep(2)
+            # everything.append(dataList[1])
+            everything.append(dataList[2])
+            count = 1
+
+    # print(everything)
+
     return everything
 
 

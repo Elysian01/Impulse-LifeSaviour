@@ -79,8 +79,19 @@
     <br>
     <h2 class="text-center font-weight-bold">Are you experiencing any of these symptoms</h2>
     <h2 class="text-center font-weight-bold">below (mark all those applicable)</h2>
-    <br>
-    <br>
+    <br><br>
+    <div class="col-lg-4 container">
+        <div class="row">
+            <div class="col-md-12">
+                {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %}
+                <div class="alert alert-danger text-center font-weight-bold">
+                    {{ messages[0][1] }}
+                </div>
+                {% endif %} {% endwith %} {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+    <br><br>
 
 
 
@@ -94,7 +105,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked15" name="fever" value="fever">
                         <label class="custom-control-label easy  " for="defaultUnchecked15"><span
-                            class="label label-primary"><b>Fever</b></span></label>
+                                class="label label-primary"><b>Fever</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -102,7 +113,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked25" name="cough" value="cough">
                         <label class="custom-control-label easy  " for="defaultUnchecked25"><span
-                            class="label label-primary"><b>Cough</b></span></label>
+                                class="label label-primary"><b>Cough</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -110,7 +121,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked35" name="vomiting" value="vomiting">
                         <label class="custom-control-label easy  " for="defaultUnchecked35"><span
-                            class="label label-primary"><b>Vomiting</b></span></label>
+                                class="label label-primary"><b>Vomiting</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -118,7 +129,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked45" name="cold" value="cold">
                         <label class="custom-control-label easy  " for="defaultUnchecked45"><span
-                            class="label label-primary"><b>Cold</b></span></label>
+                                class="label label-primary"><b>Cold</b></span></label>
                     </div>
                 </div>
             </div>
@@ -128,7 +139,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked55" name="stomach_pain" value="stomach_pain">
                         <label class="custom-control-label easy  " for="defaultUnchecked55"><span
-                            class="label label-primary"><b>Stomach Pain</b></span></label>
+                                class="label label-primary"><b>Stomach Pain</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -136,7 +147,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked65" name="vision_problem" value="vision_problem">
                         <label class="custom-control-label easy  " for="defaultUnchecked65"><span
-                            class="label label-primary"><b>Vision problem</b></span></label>
+                                class="label label-primary"><b>Vision problem</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -144,7 +155,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked75" name="confusion" value="confusion">
                         <label class="custom-control-label easy  " for="defaultUnchecked75"><span
-                            class="label label-primary"><b>Confusion</b></span></label>
+                                class="label label-primary"><b>Confusion</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -152,7 +163,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked85" name="arm_pain" value="arm_pain">
                         <label class="custom-control-label easy  " for="defaultUnchecked85"><span
-                            class="label label-primary"><b>Arm pain</b></span></label>
+                                class="label label-primary"><b>Arm pain</b></span></label>
                     </div>
                 </div>
             </div>
@@ -162,7 +173,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked95" name="itching" value="itching">
                         <label class="custom-control-label easy  " for="defaultUnchecked95"><span
-                            class="label label-primary"><b>Itching</b></span></label>
+                                class="label label-primary"><b>Itching</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -170,7 +181,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked105" name="muscle_pain" value="muscle_pain">
                         <label class="custom-control-label easy  " for="defaultUnchecked105"><span
-                            class="label label-primary"><b>Muscle Pain</b></span></label>
+                                class="label label-primary"><b>Muscle Pain</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -178,7 +189,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked115" name="depression" value="depression">
                         <label class="custom-control-label easy  " for="defaultUnchecked115"><span
-                            class="label label-primary"><b>Depression</b></span></label>
+                                class="label label-primary"><b>Depression</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -186,7 +197,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked125" name="headache" value="headache">
                         <label class="custom-control-label easy  " for="defaultUnchecked125"><span
-                            class="label label-primary"><b>Headache</b></span></label>
+                                class="label label-primary"><b>Headache</b></span></label>
                     </div>
                 </div>
             </div>
@@ -196,7 +207,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked135" name="sweating" value="sweating">
                         <label class="custom-control-label easy  " for="defaultUnchecked135"><span
-                            class="label label-primary"><b>Sweating </b></span></label>
+                                class="label label-primary"><b>Sweating </b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-6">
@@ -204,7 +215,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked145" name="shoulder_pain" value="shoulder_pain">
                         <label class="custom-control-label easy  " for="defaultUnchecked145"><span
-                            class="label label-primary"><b>Shoulder pain</b></span></label>
+                                class="label label-primary"><b>Shoulder pain</b></span></label>
                     </div>
                 </div>
             </div>
@@ -235,7 +246,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked14" name="stiff_neck" value="stiff_neck">
                         <label class="custom-control-label easy  " for="defaultUnchecked14"><span
-                            class="label label-primary"><b>Stiff Neck</b></span></label>
+                                class="label label-primary"><b>Stiff Neck</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -243,7 +254,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked2444" name="low_heartbeat" value="low_heartbeat">
                         <label class="custom-control-label easy  " for="defaultUnchecked2444"><span
-                            class="label label-primary"><b>Low heartbeat</b></span></label>
+                                class="label label-primary"><b>Low heartbeat</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -251,7 +262,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked34" name="nausea" value="nausea">
                         <label class="custom-control-label easy  " for="defaultUnchecked34"><span
-                            class="label label-primary"><b>Nausea</b></span></label>
+                                class="label label-primary"><b>Nausea</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -259,7 +270,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked44" name="dry_mouth" value="dry_mouth">
                         <label class="custom-control-label easy  " for="defaultUnchecked44"><span
-                            class="label label-primary"><b>Dry mouth</b></span></label>
+                                class="label label-primary"><b>Dry mouth</b></span></label>
                     </div>
                 </div>
             </div>
@@ -268,7 +279,7 @@
                     <div class="custom-control custom-checkbox checkbox-lg">
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked53" name="chest_pain" value="chest_pain">
                         <label class="custom-control-label easy  " for="defaultUnchecked53"><span
-                            class="label label-primary"><b>Chest Pain</b></span></label>
+                                class="label label-primary"><b>Chest Pain</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -276,7 +287,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked63" name="yawning" value="yawning">
                         <label class="custom-control-label easy  " for="defaultUnchecked63"><span
-                            class="label label-primary"><b>Yawning</b></span></label>
+                                class="label label-primary"><b>Yawning</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -284,7 +295,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked73" name="low_breath" value="low_breath">
                         <label class="custom-control-label easy  " for="defaultUnchecked73"><span
-                            class="label label-primary"><b>Low breath</b></span></label>
+                                class="label label-primary"><b>Low breath</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -292,7 +303,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked83" name="stool_pressure" value="stool_pressure">
                         <label class="custom-control-label easy  " for="defaultUnchecked83"><span
-                            class="label label-primary"><b>Stool pressure</b></span></label>
+                                class="label label-primary"><b>Stool pressure</b></span></label>
                     </div>
                 </div>
             </div>
@@ -302,7 +313,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked93" name="skin_rash" value="skin_rash">
                         <label class="custom-control-label easy  " for="defaultUnchecked93"><span
-                            class="label label-primary"><b>Skin rash</b></span></label>
+                                class="label label-primary"><b>Skin rash</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -310,7 +321,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked103" name="swelling" value="swelling">
                         <label class="custom-control-label easy  " for="defaultUnchecked103"><span
-                            class="label label-primary"><b>Swelling </b></span></label>
+                                class="label label-primary"><b>Swelling </b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -318,7 +329,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked113" name="fatigue" value="fatigue">
                         <label class="custom-control-label easy  " for="defaultUnchecked113"><span
-                            class="label label-primary"><b>Fatigue</b></span></label>
+                                class="label label-primary"><b>Fatigue</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -326,7 +337,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked123" name="urine_blood" value="urine_blood">
                         <label class="custom-control-label easy  " for="defaultUnchecked123"><span
-                            class="label label-primary"><b>Urine Blood</b></span></label>
+                                class="label label-primary"><b>Urine Blood</b></span></label>
                     </div>
                 </div>
             </div>
@@ -336,7 +347,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked133" name="back_pain" value="back_pain">
                         <label class="custom-control-label easy  " for="defaultUnchecked133"><span
-                            class="label label-primary"><b>Back Pain </b></span></label>
+                                class="label label-primary"><b>Back Pain </b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-6">
@@ -344,7 +355,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked143" name="painful_bowel_moments" value="painful_bowel_moments">
                         <label class="custom-control-label easy  " for="defaultUnchecked143"><span
-                            class="label label-primary"><b>Painful Bowel moments</b></span></label>
+                                class="label label-primary"><b>Painful Bowel moments</b></span></label>
                     </div>
                 </div>
             </div>
@@ -358,7 +369,7 @@
     </div> -->
             <br><br>
             <div class="text-center" id="nb2">
-                <a href="#nb3"><button id="nextbtn2" class="btn btn-primary btn-lg" type="button" >Next</button></a>
+                <a href="#nb3"><button id="nextbtn2" class="btn btn-primary btn-lg" type="button">Next</button></a>
             </div>
 
             <br>
@@ -375,7 +386,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked12" name="anal_bleeding" value="anal_bleeding">
                         <label class="custom-control-label easy  " for="defaultUnchecked12"><span
-                            class="label label-primary"><b>Anal bleeding</b></span></label>
+                                class="label label-primary"><b>Anal bleeding</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -383,7 +394,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked22" name="constipation" value="constipation">
                         <label class="custom-control-label easy  " for="defaultUnchecked22"><span
-                            class="label label-primary"><b>Constipation</b></span></label>
+                                class="label label-primary"><b>Constipation</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -391,7 +402,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked32" name="bloody_stools" value="bloody_stools">
                         <label class="custom-control-label easy  " for="defaultUnchecked32"><span
-                            class="label label-primary"><b>Bloody stools</b></span></label>
+                                class="label label-primary"><b>Bloody stools</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -399,7 +410,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked42" name="fecal_leakage" value="fecal_leakage">
                         <label class="custom-control-label easy  " for="defaultUnchecked42"><span
-                            class="label label-primary"><b>Fecal leakage</b></span></label>
+                                class="label label-primary"><b>Fecal leakage</b></span></label>
                     </div>
                 </div>
             </div>
@@ -409,7 +420,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked52" name="muscle_cramps" value="muscle_cramps">
                         <label class="custom-control-label easy  " for="defaultUnchecked52"><span
-                            class="label label-primary"><b>Muscle cramps </b></span></label>
+                                class="label label-primary"><b>Muscle cramps </b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -417,7 +428,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked62" name="abdominal_pain" value="abdominal_pain">
                         <label class="custom-control-label easy  " for="defaultUnchecked62"><span
-                            class="label label-primary"><b>Abdominal Pain</b></span></label>
+                                class="label label-primary"><b>Abdominal Pain</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -425,7 +436,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked72" name="weight_loss" value="weight_loss">
                         <label class="custom-control-label easy  " for="defaultUnchecked72"><span
-                            class="label label-primary"><b>Weight loss</b></span></label>
+                                class="label label-primary"><b>Weight loss</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -433,7 +444,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked82" name="dizziness" value="dizziness">
                         <label class="custom-control-label easy  " for="defaultUnchecked82"><span
-                            class="label label-primary"><b> Dizziness</b></span></label>
+                                class="label label-primary"><b> Dizziness</b></span></label>
                     </div>
                 </div>
             </div>
@@ -443,7 +454,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked92" name="sweat" value="sweat">
                         <label class="custom-control-label easy  " for="defaultUnchecked92"><span
-                            class="label label-primary"><b>Sweat</b></span></label>
+                                class="label label-primary"><b>Sweat</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -451,7 +462,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked102" name="more_urine" value="more_urine">
                         <label class="custom-control-label easy  " for="defaultUnchecked102"><span
-                            class="label label-primary"><b>More Urine </b></span></label>
+                                class="label label-primary"><b>More Urine </b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -459,7 +470,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked112" name="bleed" value="bleed">
                         <label class="custom-control-label easy  " for="defaultUnchecked112"><span
-                            class="label label-primary"><b>Bleed</b></span></label>
+                                class="label label-primary"><b>Bleed</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -467,7 +478,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked122" name="neck_pain" value="neck_pain">
                         <label class="custom-control-label easy  " for="defaultUnchecked122"><span
-                            class="label label-primary"><b>Neck pain </b></span></label>
+                                class="label label-primary"><b>Neck pain </b></span></label>
                     </div>
                 </div>
             </div>
@@ -477,7 +488,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked132" name="rash" value="rash">
                         <label class="custom-control-label easy  " for="defaultUnchecked132"><span
-                            class="label label-primary"><b>Rash </b></span></label>
+                                class="label label-primary"><b>Rash </b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-4">
@@ -485,7 +496,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked142" name="muscle_spasm" value="muscle_spasm">
                         <label class="custom-control-label easy  " for="defaultUnchecked142"><span
-                            class="label label-primary"><b>Muscle spasm </b></span></label>
+                                class="label label-primary"><b>Muscle spasm </b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-4">
@@ -493,7 +504,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked1421" name="breath_problems" value="breath_problems">
                         <label class="custom-control-label easy  " for="defaultUnchecked1421"><span
-                            class="label label-primary"><b> Breath Problems </b></span></label>
+                                class="label label-primary"><b> Breath Problems </b></span></label>
                     </div>
                 </div>
             </div>
@@ -527,7 +538,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked11" name="anus_swelling" value="anus_swelling">
                         <label class="custom-control-label easy  " for="defaultUnchecked11"><span
-                            class="label label-primary"><b>Anal swelling</b></span></label>
+                                class="label label-primary"><b>Anal swelling</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -535,7 +546,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked21" name="thirsty" value="thirsty">
                         <label class="custom-control-label easy  " for="defaultUnchecked21"><span
-                            class="label label-primary"><b>Thirsty</b></span></label>
+                                class="label label-primary"><b>Thirsty</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -543,7 +554,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked31" name="anus_itching" value="anus_itching">
                         <label class="custom-control-label easy  " for="defaultUnchecked31"><span
-                            class="label label-primary"><b>Anus itching </b></span></label>
+                                class="label label-primary"><b>Anus itching </b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -551,7 +562,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked41" name="decreased_appetite" value="decreased_appetite">
                         <label class="custom-control-label easy  " for="defaultUnchecked41"><span
-                            class="label label-primary"><b>Decreased appetite </b></span></label>
+                                class="label label-primary"><b>Decreased appetite </b></span></label>
                     </div>
                 </div>
             </div>
@@ -561,7 +572,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked51" name="wheezing" value="wheezing">
                         <label class="custom-control-label easy  " for="defaultUnchecked51"><span
-                            class="label label-primary"><b>Wheezing </b></span></label>
+                                class="label label-primary"><b>Wheezing </b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -569,7 +580,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked61" name="diarrhea" value="diarrhea">
                         <label class="custom-control-label easy  " for="defaultUnchecked61"><span
-                            class="label label-primary"><b>Diarrhea </b></span></label>
+                                class="label label-primary"><b>Diarrhea </b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -577,7 +588,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked71" name="neck_stiff" value="neck_stiff">
                         <label class="custom-control-label easy  " for="defaultUnchecked71"><span
-                            class="label label-primary"><b>Neck stiff </b></span></label>
+                                class="label label-primary"><b>Neck stiff </b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -585,7 +596,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked81" name="lump_anus" value="lump_anus">
                         <label class="custom-control-label easy  " for="defaultUnchecked81"><span
-                            class="label label-primary"><b> Lump anus</b></span></label>
+                                class="label label-primary"><b> Lump anus</b></span></label>
                     </div>
                 </div>
             </div>
@@ -595,7 +606,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked91" name="anxiety" value="anxiety">
                         <label class="custom-control-label easy  " for="defaultUnchecked91"><span
-                            class="label label-primary"><b>Anxiety</b></span></label>
+                                class="label label-primary"><b>Anxiety</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -603,7 +614,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked101" name="more_urine" value="more_urine">
                         <label class="custom-control-label easy  " for="defaultUnchecked101"><span
-                            class="label label-primary"><b>More Urine </b></span></label>
+                                class="label label-primary"><b>More Urine </b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -611,7 +622,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked111" name="bleeding" value="bleeding">
                         <label class="custom-control-label easy  " for="defaultUnchecked111"><span
-                            class="label label-primary"><b>Bleeding</b></span></label>
+                                class="label label-primary"><b>Bleeding</b></span></label>
                     </div>
                 </div>
                 <div class="col-6 col-xl-3">
@@ -619,7 +630,7 @@
 
                         <input type="checkbox" class="custom-control-input bg-light" id="defaultUnchecked121" name="hives" value="hives">
                         <label class="custom-control-label easy  " for="defaultUnchecked121"><span
-                            class="label label-primary"><b>Hives </b></span></label>
+                                class="label label-primary"><b>Hives </b></span></label>
                     </div>
                 </div>
             </div>
