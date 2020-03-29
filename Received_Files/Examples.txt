@@ -1,0 +1,10 @@
+Chronic Kidney Disease
+
+ckd_inputs = [0.75, 0.2, 0.033898, 0.836735, 0.717949, 1.0]
+ckd_inputs1 = [1.020, 0.0, 1.2, 14.8, 30, 0]
+
+
+# Heart Disease
+
+model_inputs1 = [62,1,169,80.0,120,80,1,1,0,0,1] # Safe
+model_inputs = [50, 2, 169, 82.0, 150, 100, 1, 1, 0, 0, 1]  # Danger

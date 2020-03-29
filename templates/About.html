@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Impulse - About</title>
+
+    <style>
+        .form-actions {
+            margin: 0;
+            background-color: transparent;
+            text-align: center;
+        }
+        
+        .mobileContent {
+            display: none;
+        }
+        
+        @media only screen and (min-device-width:320px) and (max-device-width:480px) {
+            .mobileContent {
+                display: inline;
+            }
+            .table-responsive {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">About</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('Homepage') }}">Home <span
+                            class=" sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('About') }}">About Application</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('Contact') }}">Contact Us</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="row">
+        <div class="col-6 ">
+            <h1 class="text-right mt-3 font-weight-bolder">Impulse</h1>
+        </div>
+        <div class="col">
+            <img src="/static/Impulse.png" class="img-fluid" alt="Responsive image" style="width: 150px; height:100px;">
+        </div>
+    </div>
+
+    <br>
+    <div class="container">
+
+        <div class="card">
+            <h5 class="card-header text-center">Coronavirus Section</h5>
+            <div class="card-body">
+                <h5 class="card-title text-center">Prediction And Current Stats</h5>
+                <p class="card-text">This Section Predicts whether an individual is been infected with Coronavirus or not , Additional to that it also shows the current stats state wise.</p>
+                <div class="form-actions">
+                    <a href="{{ url_for('CurrentStatus') }}" class="btn btn-primary mx-5 btn-lg">Current Status</a>
+                    <a href=" {{ url_for('Coronavirus') }}" class="btn btn-primary btn-lg mx-5 ">Detect
+                        COVID-19</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <h5 class="card-header text-center">Disease Prediction</h5>
+            <div class="card-body">
+                <h5 class="card-title text-center">We predict the following Diseases !</h5>
+
+
+                <div class="card-deck">
+
+                    <div class="card zoom" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-center ">Malaria</li>
+                            <li class="list-group-item text-center">Dengue</li>
+                            <li class="list-group-item text-center">Heart Attack</li>
+                        </ul>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-center">Hypertesion</li>
+                            <li class="list-group-item text-center">Migraine</li>
+                            <li class="list-group-item text-center">Cervical spondylosis</li>
+                        </ul>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-center">Paralysis</li>
+                            <li class="list-group-item text-center">Drug Reaction</li>
+                            <li class="list-group-item text-center">Alcoholic hepatitis</li>
+                        </ul>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-center">Pneumonia</li>
+                            <li class="list-group-item text-center align-middle">Dimorphic hemmorhoids(piles)
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <br>
+                <div class="form-actions">
+                    <a href="{{ url_for('Disease') }}" class="btn btn-primary btn-lg">Track Your Symptoms
+                        Now</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <h5 class="card-header text-center">Special Predictions Center</h5>
+            <div class="card-body">
+                <h5 class="card-title text-center">Make Yourself Sure and Safe by Early Detection</h5>
+                <p class="card-text text-center">The Following Models need Medical Report inorder to predict.
+                </p>
+                <div class="form-actions">
+                    <a href="{{ url_for('BreastCancer') }}" class="btn btn-outline-primary border-dark mx-5 btn-lg">Breast Cancer</a>
+                    <a href="{{ url_for('CKD') }}" class="btn  btn-outline-primary border-dark btn-lg">Chronic Kidney
+                        Disease</a>
+                    <a href="{{ url_for('Heart_disease') }}" class="btn btn-outline-primary border-dark mx-5 btn-lg">Heart Disease</a>
+                </div>
+            </div>
+        </div>
+
+
+        <br><br>
+        <div class="form-actions">
+            <a href="{{ url_for('Homepage') }}"><button type="submit" class="btn btn-primary btn-lg mx-auto"
+                    type="submit">Go Back To Home
+                </button></a>
+        </div>
+        <div class="text-center">
+            <br>
+            <h5>For any problems please <a href="{{ url_for('Contact') }}"> report here ! </a> </h5>
+        </div>
+    </div>
+
+    <div class="container bg-dark text-white .jumbotron">
+        <div class=" text-center mt-5 ">
+            <br>
+            <h3 style="margin-top: 10px;"> This website was created by </h3>
+        </div>
+        <br>
+        <br>
+
+        <div class="row d-flex align-items-center justify-content-center text-center align-items-center">
+
+            <div class="col main conter  p-0.5 ">
+                <h5>CHHADVA ANSH MITESH</h5>
+
+                <div class="text-center">
+                    <a href="mailto:anshmiteshchhadva@gmail.com"><img src="https://img.icons8.com/color/30/000000/gmail.png" /> </a>
+                    <a href="https://www.linkedin.com/in/ansh-chhadva-ab3902183/"> <img src="https://img.icons8.com/color/28/000000/linkedin.png" />
+                    </a>
+                    <a href="https://github.com/ansh0812"> <img src="https://img.icons8.com/material-sharp/30/000000/github.png" /> </a>
+
+
+                </div>
+
+            </div>
+            <div class="col  main p-0.5">
+                <h5> OMKAR SUHAS BHABAL
+                </h5>
+                <div class="text-center">
+                    <a href="mailto:bhabalomkar421@gmail.com"><img src="https://img.icons8.com/color/30/000000/gmail.png" /> </a>
+                    <a href="https://www.linkedin.com/in/omkar-bhabal-620b56192/"> <img src="https://img.icons8.com/color/28/000000/linkedin.png" /> </a>
+                    <a href="https://github.com/bhabalomkar421"> <img src="https://img.icons8.com/material-sharp/30/000000/github.png" /></a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col  main  p-0.5">
+                <h5> GUPTA ABHISHEK MANILAL</h5>
+                <div class="text-center">
+                    <a href="mailto:abhig0209@gmail.com"><img src="https://img.icons8.com/color/30/000000/gmail.png" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/abhishek-gupta-a745221a0/"> <img src="https://img.icons8.com/color/28/000000/linkedin.png" />
+
+
+
+                        <a href="https://github.com/Elysian01"> <img src="https://img.icons8.com/material-sharp/30/000000/github.png" /></a><br>
+                </div>
+
+            </div>
+
+
+        </div>
+        <br>
+        <br>
+    </div>
+    <br><br>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

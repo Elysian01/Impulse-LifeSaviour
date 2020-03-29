@@ -1,0 +1,60 @@
+{% extends "layout.html" %}{% block contents %}
+<form class="container  p-2" action="/CKD" method="POST">
+    <div class="row">
+        <br>
+        <div class="col">
+            <div class="form-group ">
+                <label for="sg" class="font-weight-bold">Specific gravity : </label>
+                <input type="number" step="0.0000001" name="sg" class="form-control" id="sg" placeholder="" required>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="exampleFormControlInput1" class="font-weight-bold">Albumin : </label>
+                <input type="number" name="albumin" step="0.0000001" class="form-control" id="albumin" placeholder="" required>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group ">
+                <label for="sc" class="font-weight-bold">Serum christening : </label>
+                <input type="number" step="0.0000001" name="sc" class="form-control" id="sc" placeholder="" required>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="hemoglobin" class="font-weight-bold">Hemoglobin : </label>
+                <input type="number" name="hemoglobin" step="0.0000001" class="form-control" id="hemoglobin" placeholder="" required>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group ">
+                <label for="pcv" class="font-weight-bold">Packed cell volume : </label>
+                <input type="number" name="pcv" step="0.0000001" class="form-control" id="pcv" placeholder="" required>
+            </div>
+        </div>
+
+    </div>
+    <div class="form-check form-check-inline">
+        <label class="font-weight-bold">Hypertension : </label>
+    </div>
+
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="hypertension" id="hypertension" value="1" required>
+        <label class="form-check-label" for="hypertension">Yes</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="hypertension" id="hypertension" value="0" required>
+        <label class="form-check-label" for="hypertension">No</label>
+    </div>
+    <br><br>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn-lg" type="submit">Submit</button>
+    </div>
+</form>
+{% endblock %}

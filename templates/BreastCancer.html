@@ -1,0 +1,31 @@
+{% extends "layout.html" %} {% block contents %}
+<br>
+<h3 class="text-center ">Upload Your Breast Cancer Lab report in the following format</h3>
+<h4 class="text-center"><a href="{{ url_for('Download') }}"> Download Format</a></h4>
+<br><br>
+<div class="col-lg-4 container">
+    <div class="row">
+        <div class="col-md-12">
+            {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %}
+            <div class="alert alert-danger text-center font-weight-bold">
+                {{ messages[0][1] }}
+            </div>
+            {% endif %} {% endwith %} {% block content %}{% endblock %}
+        </div>
+    </div>
+
+
+
+    <form action="/BreastCancer" enctype="multipart/form-data" method="POST">
+        <div class="form-group border border-dark rounded-lg  p-4">
+            <h6>Upload Your Lab report in png , pdf , jpg or jpeg format only</h6>
+            <h6></h6>
+            <input type="file" accept="application/pdf,image/*" class="form-control-file" name="inputFile" id="exampleFormControlFile1" required>
+        </div>
+        <br><br>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-lg" type="submit">Upload</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
