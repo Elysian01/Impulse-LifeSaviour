@@ -182,64 +182,6 @@ def Heart_disease():
     return render_template("HeartDisease.html", title="Heart Disease Detector", navTitle="Heart Disease Detector", headText="Heart Disease Probabilty Detector", ImagePath="/static/HeartPulse.png")
 
 
-# @app.route("/Disease", methods=["POST", "GET"])
-# def DiseasePrediction():
-#     s = {}
-#     prediction = ""
-#     if request.method == "POST":
-#         rf = request.form
-#         print(rf)
-#         for key in rf.keys():
-#             data = key
-#             print(key)
-#             s = key
-#             # pleaseChalja(s)
-#             print(s)
-#             s = str(s)
-#             s = s.split(":")
-#             temp = s[1].strip("}")
-#             # tset = pleaseChalja(temp)
-#         allSymptoms = temp
-#         print(allSymptoms)
-#         test = allSymptoms.split(',')
-#         test1 = []
-#         print(type(allSymptoms))
-#         for i in test:
-#             test1.append(i.strip('"'))
-#         test1[0] = test1[0].strip("[").strip('"')
-#         test1[-1] = test1[-1].strip("]").strip("]}").strip('"')
-#         print(test1)
-#         print(type(test1))
-#         ip = test1[0]
-#         symptoms = test1[1:]
-#         print(symptoms)
-#         prediction = DiseasePred.predicts(symptoms)
-#         if prediction:
-#             return redirect("NonInfected.htm")
-#         print(prediction)
-#     print(prediction)
-#     return render_template("DiseasePredict.html")
-
-
-# def pleaseChalja(allSymptoms):
-#     print(allSymptoms)
-#     test = allSymptoms.split(',')
-#     test1 = []
-#     print(type(allSymptoms))
-#     for i in test:
-#         test1.append(i.strip('"'))
-#     test1[0] = test1[0].strip("[").strip('"')
-#     test1[-1] = test1[-1].strip("]").strip("]}").strip('"')
-#     print(test1)
-#     print(type(test1))
-#     ip = test1[0]
-#     symptoms = test1[1:]
-#     print(symptoms)
-#     prediction = DiseasePred.predicts(symptoms)
-#     print(prediction)
-    # return prediction
-
-# <form action="{{ url_for('Disease') }}" method="POST"></form>
 @app.route("/diseaseprediction", methods=["POST", "GET"])
 def Disease():
     symptoms = []
