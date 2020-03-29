@@ -25,10 +25,10 @@ def currentStatus():
     myDataStr = myDataStr[1:]
     itemList = myDataStr.split("\n")
 
-    # print(itemList)
-    tempList = int(itemList[-11].strip('#')) + int(itemList[-9].strip('#')
-                                                   ), int(itemList[-6].strip('#')), int(itemList[-3].strip('#'))
-    # print(tempList)
+    print(itemList)
+    tempList = int(itemList[-9].strip('#')
+                   ), int(itemList[-6].strip('#')), int(itemList[-3].strip('#'))
+    print(tempList)
 
     return tempList
 
