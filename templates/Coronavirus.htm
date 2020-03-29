@@ -1,12 +1,35 @@
 {% extends "layout.html" %} {% block contents %}
 <style>
-    /* @media only screen and (min-device-width:320px) and (max-device-width:480px) {
+        @media only screen and (min-device-width:320px) and (max-device-width:480px) {
         .ele {
-            width: 50%;
-            margin-left: 10%;
-            margin-right: 0%;
-            background-color: aqua;
-        } */
+            width: 100%;
+        }
+        .x {
+            margin-left: 34%;
+            color: #000;
+        }
+        .y {
+            margin-left: 38.5%;
+            color: #000;
+        }
+        .z {
+            margin-left: 23%;
+        }
+        .a {
+            margin-left: 27%;
+        }
+        .b {
+            margin-left: 33%;
+        }
+        .c {
+            margin-left: 28%;
+        }
+        .d {
+            margin-left: 32%;
+        }
+        .e {
+            margin-left: 2%;
+        }
 </style>
 <br>
 <form class="container" action="/CoronavirusPrediction" method="POST">
@@ -20,14 +43,14 @@
         <input type="number" name="age" class="form-control" id="exampleFormControlInput1" placeholder="" required>
     </div>
 
-    <div class="row">
+    <div class="row ">
         <div class="col-12 ele col-xl-4 col-lg-4 col-md-6 col-sm-6">
             <div class="form-check form-check-inline">
                 <label class="font-weight-bold">Cough : </label>
             </div>
 
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="cough" id="inlineRadio1" value="1" required>
+            <div class="form-check form-check-inline x">
+                <input class="form-check-input " type="radio" name="cough" id="inlineRadio1" value="1" required>
                 <label class="form-check-label" for="inlineRadio1">Yes</label>
             </div>
             <div class="form-check form-check-inline">
@@ -36,11 +59,11 @@
             </div>
         </div>
         <div class="col-12 ele col-xl-4 col-lg-4 col-md-6 col-sm-6">
-            <div class="form-check form-check-inline">
+            <div class="form-check form-check-inline ">
                 <label class="font-weight-bold">Cold : </label>
             </div>
 
-            <div class="form-check form-check-inline">
+            <div class="form-check form-check-inline y">
                 <input class="form-check-input" type="radio" name="cold" id="inlineRadio1" value="1" required>
                 <label class="form-check-label" for="inlineRadio1">Yes</label>
             </div>
@@ -54,7 +77,7 @@
                 <label class="font-weight-bold">Sore Throat : </label>
             </div>
 
-            <div class="form-check form-check-inline">
+            <div class="form-check form-check-inline z">
                 <input class="form-check-input" type="radio" name="sore_throat" id="inlineRadio1" value="1" required>
                 <label class="form-check-label" for="inlineRadio1">Yes</label>
             </div>
@@ -71,7 +94,7 @@
                 <label class="font-weight-bold">Body Pain : </label>
             </div>
 
-            <div class="form-check form-check-inline">
+            <div class="form-check form-check-inline a">
                 <input class="form-check-input" type="radio" name="body_pain" id="inlineRadio1" value="1" required>
                 <label class="form-check-label" for="inlineRadio1">Yes</label>
             </div>
@@ -85,7 +108,7 @@
                 <label class="font-weight-bold">Fatigue : </label>
             </div>
 
-            <div class="form-check form-check-inline">
+            <div class="form-check form-check-inline b">
                 <input class="form-check-input" type="radio" name="fatigue" id="inlineRadio1" value="1" required>
                 <label class="form-check-label" for="inlineRadio1">Yes</label>
             </div>
@@ -95,11 +118,11 @@
             </div>
         </div>
         <div class="col-12 ele col-xl-4">
-            <div class="form-check form-check-inline">
+            <div class="form-check form-check-inline ">
                 <label class="font-weight-bold">Headache : </label>
             </div>
 
-            <div class="form-check form-check-inline">
+            <div class="form-check form-check-inline c">
                 <input class="form-check-input" type="radio" name="headache" id="inlineRadio1" value="1" required>
                 <label class="form-check-label" for="inlineRadio1">Yes</label>
             </div>
@@ -117,7 +140,7 @@
                 <label class="font-weight-bold">Diarrhea : </label>
             </div>
 
-            <div class="form-check form-check-inline">
+            <div class="form-check form-check-inline d">
                 <input class="form-check-input" type="radio" name="diarrhea" id="inlineRadio1" value="1" required>
                 <label class="form-check-label" for="inlineRadio1">Yes</label>
             </div>
@@ -131,7 +154,7 @@
                 <label class="font-weight-bold">Difficulty in breathing : </label>
             </div>
 
-            <div class="form-check form-check-inline">
+            <div class="form-check form-check-inline e">
                 <input class="form-check-input" type="radio" name="difficult_breathing" id="inlineRadio1" value="1" required>
                 <label class="form-check-label" for="inlineRadio1">Yes</label>
             </div>
