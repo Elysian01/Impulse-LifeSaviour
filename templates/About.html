@@ -8,6 +8,12 @@
     <title>Impulse - About</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         .form-actions {
             margin: 0;
             background-color: transparent;
@@ -18,19 +24,22 @@
             display: none;
         }
         
-        @media only screen and (min-device-width:320px) and (max-device-width:480px) {
+        @media only screen and (min-device-width:200px) and (max-device-width:770px) {
             .mobileContent {
                 display: inline;
             }
             .table-responsive {
                 display: none;
             }
+            .newbtn {
+                margin-top: 10%;
+            }
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="width:100%">
         <a class="navbar-brand" href="#">About</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,16 +63,20 @@
     </nav>
     <br>
     <div class="row">
-        <div class="col-6 ">
+        <div class="col">
             <h1 class="text-right mt-3 font-weight-bolder">Impulse</h1>
         </div>
         <div class="col">
             <img src="/static/Impulse.png" class="img-fluid" alt="Responsive image" style="width: 150px; height:100px;">
         </div>
     </div>
+    <!-- <div class="text-center">
+        <img src="/static/Impulse.png" class="rounded mx-auto d-block" alt="Responsive image">
+        <h1 style="margin-right: 3%;">IMPULSE</h1>
+    </div> -->
 
     <br>
-    <div class="container">
+    <div class="container" style="width:100%">
 
         <div class="card">
             <h5 class="card-header text-center">Coronavirus Section</h5>
@@ -72,7 +85,7 @@
                 <p class="card-text">This Section Predicts whether an individual is been infected with Coronavirus or not , Additional to that it also shows the current stats state wise.</p>
                 <div class="form-actions">
                     <a href="{{ url_for('CurrentStatus') }}" class="btn btn-primary mx-5 btn-lg">Current Status</a>
-                    <a href=" {{ url_for('Coronavirus') }}" class="btn btn-primary btn-lg mx-5 ">Detect
+                    <a href=" {{ url_for('Coronavirus') }}" class="btn btn-primary btn-lg mx-5 newbtn ">Detect
                         COVID-19</a>
                 </div>
             </div>
@@ -86,7 +99,7 @@
 
                 <div class="card-deck">
 
-                    <div class="card zoom" style="width: 18rem;">
+                    <div class="card zoom" style="width: 100%;">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item text-center ">Malaria</li>
                             <li class="list-group-item text-center">Dengue</li>
@@ -94,7 +107,8 @@
                         </ul>
                     </div>
 
-                    <div class="card" style="width: 18rem;">
+
+                    <div class="card" style="width: 100%;">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item text-center">Hypertesion</li>
                             <li class="list-group-item text-center">Migraine</li>
@@ -102,7 +116,7 @@
                         </ul>
                     </div>
 
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 100%;">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item text-center">Paralysis</li>
                             <li class="list-group-item text-center">Drug Reaction</li>
@@ -110,7 +124,7 @@
                         </ul>
                     </div>
 
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 100%;">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item text-center">Pneumonia</li>
                             <li class="list-group-item text-center align-middle">Dimorphic hemmorhoids(piles)
@@ -120,12 +134,20 @@
                     </div>
 
                 </div>
-                <br>
-                <div class="form-actions">
-                    <a href="{{ url_for('Disease') }}" class="btn btn-primary btn-lg">Track Your Symptoms
-                        Now</a>
-                </div>
+                <!-- <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">Malaria</div>
+                <div class="col-4">Dengue</div>
+                <div class="col-4">Heart Attack</div>
             </div>
+            <br>
+            <div class="form-actions">
+                <a href="{{ url_for('Disease') }}" class="btn btn-primary btn-lg">Track Your Symptoms
+                        Now</a>
+            </div>
+        </div>  -->
+            </div>
+
         </div>
         <br>
         <div class="card">
@@ -136,9 +158,9 @@
                 </p>
                 <div class="form-actions">
                     <a href="{{ url_for('BreastCancer') }}" class="btn btn-outline-primary border-dark mx-5 btn-lg">Breast Cancer</a>
-                    <a href="{{ url_for('CKD') }}" class="btn  btn-outline-primary border-dark btn-lg">Chronic Kidney
+                    <a href="{{ url_for('CKD') }}" class="btn  btn-outline-primary border-dark btn-lg newbtn">Chronic Kidney
                         Disease</a>
-                    <a href="{{ url_for('Heart_disease') }}" class="btn btn-outline-primary border-dark mx-5 btn-lg">Heart Disease</a>
+                    <a href="{{ url_for('Heart_disease') }}" class=" newbtn btn btn-outline-primary border-dark mx-5 btn-lg">Heart Disease</a>
                 </div>
             </div>
         </div>
@@ -152,7 +174,7 @@
         </div>
         <div class="text-center">
             <br>
-            <h5>For any problems please <a href="{{ url_for('Contact') }}"> report here ! </a> </h5>
+            <h5>For any problems please <a href="{{ url_for('Contact') }}"> report here </a> </h5>
         </div>
     </div>
 

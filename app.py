@@ -57,6 +57,8 @@ def CurrentStatus():
             scases, scured, sdeath = CurrentStats.StateStatus(state)
     except UnboundLocalError:
         flash("The State is not Affected Yet")
+    except ValueError:
+        flash("The State is not Affected Yet")
     return render_template("CurrentStats.html", state=state, scases=scases, scured=scured, sdeath=sdeath, cases=cases, cured=cured, death=death, title="Current Statistics", navTitle="Current Status", headText="Caronavirus Current Stats Statewise", ImagePath="/static/Virus.png")
 
 
