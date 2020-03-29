@@ -18,16 +18,16 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = '73a4b6ca8cb647a20b71423e31492452'
 
 # For Coronavirus
-with open("Models\Coronavirus_logistic", "rb") as f:
+with open("Coronavirus_logistic", "rb") as f:
     logisticRegression = pickle.load(f)
 
 
 # For Chronic kidney disease
-with open("Models\CKD_Model", "rb") as f:
+with open("CKD_Model", "rb") as f:
     decisionTree = pickle.load(f)
 
 # For Heart Disease
-with open("Models\HeartDisease", "rb") as f:
+with open("HeartDisease", "rb") as f:
     randomForest = pickle.load(f)
 
 
