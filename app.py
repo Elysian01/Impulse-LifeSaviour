@@ -9,7 +9,7 @@ import smtplib
 import CurrentStats
 # import CancerModel
 # import PdfConverter
-from PdfConverter import PDFPageCountError
+# from PdfConverter import PDFPageCountError
 import DiseasePred
 
 # import warnings
