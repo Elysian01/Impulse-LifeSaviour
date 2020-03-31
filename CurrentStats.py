@@ -26,8 +26,8 @@ def currentStatus():
     itemList = myDataStr.split("\n")
 
     # print(itemList)
-    tempList = int(itemList[-9].strip('#')
-                   ), int(itemList[-6].strip('#')), int(itemList[-3].strip('#'))
+    tempList = int(itemList[-11].strip('#')
+                   ), int(itemList[-8].strip('#')), int(itemList[-5].strip('#'))
     # print(tempList)
 
     return tempList
@@ -71,6 +71,6 @@ def StateStatus(state):
 
 
 if __name__ == '__main__':
-    # currentStatus()
+    currentStatus()
     # StateStatus("Maharashtra")
     pass
