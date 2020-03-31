@@ -59,7 +59,7 @@ def CurrentStatus():
         flash("The State is not Affected Yet")
     except ValueError:
         flash("The State is not Affected Yet")
-    return render_template("CurrentStats.html", state=state, scases=scases, scured=scured, sdeath=sdeath, cases=cases, cured=cured, death=death, title="Current Statistics", navTitle="Current Status", headText="Caronavirus Current Stats Statewise", ImagePath="/static/Virus.png")
+    return render_template("CurrentStats.html", state=state, scases=scases, scured=scured, sdeath=sdeath, cases=cases, cured=cured, death=death, title="Current Statistics", navTitle="Current Status", headText="Coronavirus Current Stats Statewise", ImagePath="/static/Virus.png")
 
 
 @app.route("/about")
@@ -264,7 +264,7 @@ def Coronavirus():
         else:
             return render_template("NonInfected.htm")
 
-    return render_template("Coronavirus.htm", title="Caronavirus Prediction", navTitle="COVID-19 Detector", headText="Coronavirus Probability Detector", ImagePath="/static/VirusImage.png")
+    return render_template("Coronavirus.htm", title="Coronavirus Prediction", navTitle="COVID-19 Detector", headText="Coronavirus Probability Detector", ImagePath="/static/VirusImage.png")
 
 
 if __name__ == '__main__':
