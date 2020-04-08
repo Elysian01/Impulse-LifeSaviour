@@ -11,6 +11,13 @@
    Dengue               Migraine                Drug Reaction            Dimorphic hemmorhoids(piles)
    Heart Attack         Cervical spondylosis    Alcoholic hepatitis      
    
+   
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+   
   <br>
 <li type = "square">It also predicts </li>
 <li><ul>
