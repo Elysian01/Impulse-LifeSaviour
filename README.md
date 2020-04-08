@@ -7,10 +7,7 @@
 <br>
 <li type = "square">There are many other feature supported by this application like DISEASE PREDICTION which predicts over 10+ Main diseases based on symptoms</li>
    
-                                             
-                                             
-                
-   
+   <br>
   <table>
   <tr>
     <td>Malaria</td>
@@ -30,9 +27,6 @@
     <td>Cervical spondylosis</td>
     <td>Alcoholic hepatitis</td>
   </tr>
-  
- 
-  
 </table>
   <br>
 <li type = "square">It also predicts </li>
