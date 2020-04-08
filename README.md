@@ -29,7 +29,7 @@
     <td>Dengue</td>
     <td>Migraine</td>
     <td>Drug Reaction</td>
-    <td colspan = 2> Dimorphic hemmorhoids(piles)</td>
+    <td rowspan = 2> Dimorphic hemmorhoids(piles)</td>
   </tr>
   
 </table>
