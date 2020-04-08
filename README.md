@@ -6,7 +6,11 @@
 <li type = "square">Through this application you can check whether you are experencing from Coronavirus or not , this can widely help the government to identify patients</li>
 <br>
 <li type = "square">There are many other feature supported by this application like DISEASE PREDICTION which predicts over 10+ Main diseases based on symptoms</li>
-  1. Malaria
+   
+   Malaria              Hypertension            Paralysis                Pneumonia
+   Dengue               Migraine                Drug Reaction            Dimorphic hemmorhoids(piles)
+   Heart Attack         Cervical spondylosis    Alcoholic hepatitis      
+   
   <br>
 <li type = "square">It also predicts </li>
 <li><ul>
