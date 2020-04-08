@@ -18,6 +18,12 @@
     <td>Paralysis</td>
     <td>Pneumonia</td>
   </tr>
+   <tr>
+    <td>Dengue</td>
+    <td>Migraine</td>
+    <td>Drug Reaction</td>
+    <td rowspan = 2> Dimorphic hemmorhoids(piles)</td>
+  </tr>
   
   <tr>
     <td>Heart Attack</td>
@@ -25,12 +31,7 @@
     <td>Alcoholic hepatitis</td>
   </tr>
   
-  <tr>
-    <td>Dengue</td>
-    <td>Migraine</td>
-    <td>Drug Reaction</td>
-    <td rowspan = 2> Dimorphic hemmorhoids(piles)</td>
-  </tr>
+ 
   
 </table>
   <br>
