@@ -7,18 +7,32 @@
 <br>
 <li type = "square">There are many other feature supported by this application like DISEASE PREDICTION which predicts over 10+ Main diseases based on symptoms</li>
    
-   Malaria              Hypertension            Paralysis                Pneumonia
-   Dengue               Migraine                Drug Reaction            Dimorphic hemmorhoids(piles)
-   Heart Attack         Cervical spondylosis    Alcoholic hepatitis      
+                                             
+                                             
+                
    
-   
-
-
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-   
+  <table>
+  <tr>
+    <td>Malaria</td>
+    <td>Hypertension</td>
+    <td>Paralysis</td>
+    <td>Pneumonia</td>
+  </tr>
+  
+  <tr>
+    <td>Heart Attack</td>
+    <td>Cervical spondylosis</td>
+    <td>Alcoholic hepatitis</td>
+  </tr>
+  
+  <tr>
+    <td>Dengue</td>
+    <td>Migraine</td>
+    <td>Drug Reaction</td>
+    <td colspan = 2> Dimorphic hemmorhoids(piles)</td>
+  </tr>
+  
+</table>
   <br>
 <li type = "square">It also predicts </li>
 <li><ul>
