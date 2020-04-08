@@ -34,8 +34,8 @@ with open("HeartDisease", "rb") as f:
 @app.route("/")
 @app.route("/home")
 def Homepage():
-    cases, cured, death = CurrentStats.currentStatus()
-    return render_template("Homepage.html", cases=cases, cured=cured, death=death, feedback="False")
+    # cases, cured, death = CurrentStats.currentStatus()
+    return render_template("Homepage.html", feedback="False")
 
 
 @app.errorhandler(404)
@@ -43,23 +43,23 @@ def page_not_found(e):
     return render_template("PageNotFound.html")
 
 
-@app.route("/currentstats", methods=["POST", "GET"])
-def CurrentStatus():
-    cases, cured, death = CurrentStats.currentStatus()
-    scases = scured = sdeath = 0
-    state = ""
-    try:
-        if request.method == "POST":
-            # print(request.form)
-            formDict = request.form
-            state = formDict['state']
-            # print(state)
-            scases, scured, sdeath = CurrentStats.StateStatus(state)
-    except UnboundLocalError:
-        flash("The State is not Affected Yet")
-    except ValueError:
-        flash("The State is not Affected Yet")
-    return render_template("CurrentStats.html", state=state, scases=scases, scured=scured, sdeath=sdeath, cases=cases, cured=cured, death=death, title="Current Statistics", navTitle="Current Status", headText="Coronavirus Current Stats Statewise", ImagePath="/static/Virus.png")
+# @app.route("/currentstats", methods=["POST", "GET"])
+# def CurrentStatus():
+#     cases, cured, death = CurrentStats.currentStatus()
+#     scases = scured = sdeath = 0
+#     state = ""
+#     try:
+#         if request.method == "POST":
+#             # print(request.form)
+#             formDict = request.form
+#             state = formDict['state']
+#             # print(state)
+#             scases, scured, sdeath = CurrentStats.StateStatus(state)
+#     except UnboundLocalError:
+#         flash("The State is not Affected Yet")
+#     except ValueError:
+#         flash("The State is not Affected Yet")
+#     return render_template("CurrentStats.html", state=state, scases=scases, scured=scured, sdeath=sdeath, cases=cases, cured=cured, death=death, title="Current Statistics", navTitle="Current Status", headText="Coronavirus Current Stats Statewise", ImagePath="/static/Virus.png")
 
 
 @app.route("/about")
