@@ -1,4 +1,10 @@
-Chronic Kidney Disease
+# Disease Prediction
+
+Maliria :- fever,vomiting,headache,sweating,	abdominal_pain,diarrhea,bloody_stools,muscle_pain,nausea,coma,anemia
+Pneumonia :- fever,sweating,vomiting,cough,low_breath,chest_pain	,fatigue, nausea			
+
+
+# Chronic Kidney Disease
 
 ckd_inputs = [0.75, 0.2, 0.033898, 0.836735, 0.717949, 1.0]
 ckd_inputs1 = [1.020, 0.0, 1.2, 14.8, 30, 0]
