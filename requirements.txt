@@ -69,7 +69,7 @@ psutil==5.7.0
 
 pycodestyle==2.5.0
 pycparser==2.19
-Pygments==2.6.1
+Pygments==2.7.4
 pyler==0.2.0
 pyparsing==2.4.6
 
