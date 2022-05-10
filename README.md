@@ -1,4 +1,4 @@
-# Impulse101-LifeSaviour
+# Impulse-LifeSaviour
 
 <ul>
   <li type = "square">The Project focuses on saving life of peoples , by saving time , human errors and by early prediction of diseases or infection</li>
